@@ -2,13 +2,9 @@
 class Program
 {
     public static double num1, num2, result;
-
     public static int menuOption;
-
     public static string operations = " ";
-
     public static bool valid = false;
-
     static void Main(string[] args)
     {
         Console.WriteLine("CALCULATOR APPLICATION");
@@ -17,9 +13,6 @@ class Program
         num1 = Convert.ToDouble(Console.ReadLine());
         Console.Write("What is the second number? ");
         num2 = Convert.ToDouble(Console.ReadLine());
-
-
-
         do
         {
             Console.WriteLine("Select an operation:");
@@ -70,25 +63,21 @@ class Program
         public static double Addition(string operation, double num1, double num2)
         {
             result = num1 + num2;
-
             return result;
         }
         public static double Substraction(string operation, double num1, double num2)
         {
             result = num1 - num2;
-
             return result;
         }
         public static double Multiplication(string operation, double num1, double num2)
         {
             result = num1 * num2;
-
             return result;
         }
         public static double Division(string operation, double num1, double num2)
         {
             result = num1 / num2;
-
             return result;
         }
         public static void ShowResults()
